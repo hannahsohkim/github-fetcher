@@ -1,0 +1,1 @@
+Web app that fetches data from GitHub's API and stores it in local MongoDB database. RESTful routes set to fetch data, sort top repos, and render onto page. Technologies used include React, Express, MongoDB.
