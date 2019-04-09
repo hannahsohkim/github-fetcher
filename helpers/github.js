@@ -9,11 +9,13 @@ let getReposByUsername = (user, callback) => {
       'Authorization': `token ${config.TOKEN}`
     }
   };
+
   request(options, (err, res, body) => {
     if (err) {
       console.log(err, 'ERROR');
+      callback(err);
     }
-    callback(JSON.parse(body));
+    callback(body);
   })
 
 }
